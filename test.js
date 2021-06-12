@@ -7,7 +7,7 @@ const addQuestion = () => {
         url : 'http://localhost:8080/api/addQuestion',
         params : {
             text : ques.value,
-            answer : ques.value
+            answer : ans.value
         }
     })
     .then(resp => {
@@ -27,7 +27,7 @@ const getQuestions = () => {
         }
     })
     .then(resp => {
-        console.log(resp.data)
+        console.log(resp.data.questions)
     })
     .catch(err => {
         console.log(err)
