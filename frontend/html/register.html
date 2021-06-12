@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <div>
+        <input type="text" id='reg_user' placeholder="Username"/>
+        <input type="text" id='reg_email' placeholder="Email"/>
+        <input type="password" id='reg_pass' placeholder="Password"/>
+        <input type="password" id='reg_con_pass' placeholder="Confirm Password"/>
+    </div>
+    <button id='reg_submit'>
+        Register
+    </button>
+    <div id='reg_error'></div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" async></script>
+    <script type='module' src='../js/register_api.js'></script>
+</body>
+</html>

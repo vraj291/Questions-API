@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <div>
+        <input type="text" id='login_user' placeholder="Username"/>
+        <input type="password" id='login_pass' placeholder="Password"/>
+    </div>
+    <button id='login_submit'>
+        Login
+    </button>
+    <button id='login_google'>
+        Login using Google
+    </button>
+    <button id='login_github'>
+        Login using Github
+    </button>
+    <div id='login_error'>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" async></script>
+    <script type='module' src='../js/login_api.js' async></script>
+</body>
+</html>
